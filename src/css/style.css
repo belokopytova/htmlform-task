@@ -42,12 +42,6 @@
 
 .btn-danger {
   color: #fff;
-  background-color: #c35b65;
+  background-color: #E32636;
   border-color: #830e1a;
-}
-
-.btn-danger:hover {
-  color: #fff;
-  background-color: #c8237e;
-  border-color: #bd216588;
 }
