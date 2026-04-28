@@ -15,13 +15,11 @@ const onClick = (e) => {
     );
 
     if (matchingPopover) {
-
       popoverFactory.remove(matchingPopover.id);
       actualPopovers = actualPopovers.filter(
         (popover) => popover.id !== matchingPopover.id,
       );
     } else {
-
       actualPopovers.push({
         name: target.name,
         id: popoverFactory.show('Popover title', popoverText, target),
