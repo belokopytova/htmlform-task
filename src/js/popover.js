@@ -4,18 +4,18 @@ export default class Popover {
   }
 
   show(headerText, bodyText, element) {
-    const popoverElement = document.createElement("div");
-    popoverElement.classList.add("popover", "bs-popover-top");
+    const popoverElement = document.createElement('div');
+    popoverElement.classList.add('popover', 'bs-popover-top');
 
-    const popoverHeader = document.createElement("div");
-    popoverHeader.classList.add("popover-header");
+    const popoverHeader = document.createElement('div');
+    popoverHeader.classList.add('popover-header');
     popoverHeader.textContent = headerText;
 
-    const arrow = document.createElement("div");
-    arrow.classList.add("arrow");
+    const arrow = document.createElement('div');
+    arrow.classList.add('arrow');
 
-    const popoverBody = document.createElement("div");
-    popoverBody.classList.add("popover-body");
+    const popoverBody = document.createElement('div');
+    popoverBody.classList.add('popover-body');
     popoverBody.textContent = bodyText;
 
     popoverElement.appendChild(popoverHeader);
@@ -36,12 +36,15 @@ export default class Popover {
 
     const leftPopover =
       left + element.offsetWidth / 2 - popoverElement.offsetWidth / 2;
+
     popoverElement.style.left = `${leftPopover}px`;
+
     const topPopover =
       top -
       parseFloat(paddingTop) -
       parseFloat(borderTopWidth) -
       popoverElement.offsetHeight;
+
     popoverElement.style.top = `${topPopover}px`;
 
     return id;
