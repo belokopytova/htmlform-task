@@ -109,7 +109,7 @@ describe('Popover', () => {
       left: 100,
       top: 200,
       width: 100,
-      height: 40
+      height: 40,
     };
 
     button.getBoundingClientRect = jest.fn(() => mockRect);
