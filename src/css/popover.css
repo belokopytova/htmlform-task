@@ -20,7 +20,6 @@
 .popover .arrow {
     position: absolute;
     display: block;
-    margin: 0 5px;
     width: 16px;
     height: 8px;
 }
@@ -43,9 +42,10 @@
 
 .bs-popover-top .arrow {
     bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%) rotate(270deg);
+    left: calc(50% - 4px);
+    transform: translateX(-50%)  rotate(270deg);
 }
+
 
 .bs-popover-top>.arrow::after {
     left: 1px;
