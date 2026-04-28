@@ -38,7 +38,7 @@ export default class Popover {
 
     popoverElement.style.left = `${leftPopover}px`;
 
-    const topPopover = top 
+    const topPopover = top
     - parseFloat(paddingTop)
     - parseFloat(borderTopWidth)
     - popoverElement.offsetHeight;
